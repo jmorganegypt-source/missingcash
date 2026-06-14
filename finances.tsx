@@ -302,11 +302,10 @@ export default function Finance() {
                   <p className="text-white/50 text-xs leading-relaxed">Ready? Mia hands you straight to Erin Crofton</p>
                 </div>
               </div>
-
-              <button
+                <button
                 onClick={() => openMia("Can you tell me about Stratton Finance and what loans are available?")}
-                className="inline-flex items-center gap-3 h-12 px-6 rounded-xl bg-[#F5B942] text-[#060E1C] font-bold hover:bg-[#FFD466] transition-all shadow-[0_0_20px_rgba(245,185,66,0.3)] hover:-translate-y-0.5"
-              >
+             className="inline-flex items-center gap-3 h-12 px-6 rounded-xl bg-[#F5B942] text-[#060E1C] font-bold hover:bg-[#FFD466] transition-all shadow-[0_0_20px_rgba(245,185,66,0.3)] hover:-translate-y-0.5"
+                  >
                 <img src={MIA_AVATAR} alt="Mia" className="w-6 h-6 rounded-full object-cover" />
                 Chat with Mia Now
                 <ArrowRight className="w-4 h-4" />
