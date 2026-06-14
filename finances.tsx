@@ -171,9 +171,7 @@ export default function Finance() {
   return (
     <div className="w-full">
 
-      {/* ─────────────────────────────────────────────────────────────
-          HERO — Mia + Stratton partnership
-      ───────────────────────────────────────────────────────────── */}
+      {/* HERO */}
       <section className="relative min-h-[88vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 bg-[#060E1C]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_70%_50%,rgba(0,193,213,0.07)_0%,transparent_60%)]" />
@@ -267,9 +265,7 @@ export default function Finance() {
         </div>
       </section>
 
-      {/* ─────────────────────────────────────────────────────────────
-          MIA — AI Finance Guide feature block
-      ───────────────────────────────────────────────────────────── */}
+      {/* MIA — AI Finance Guide */}
       <section className="relative py-20 overflow-hidden border-y border-white/6">
         <div className="absolute inset-0 bg-gradient-to-r from-[#0A1628] via-[#0D1E35] to-[#0A1628]" />
         <div className="absolute right-0 top-0 h-full w-1/2 bg-[radial-gradient(ellipse_80%_100%_at_100%_50%,rgba(245,185,66,0.06)_0%,transparent_60%)]" />
@@ -337,9 +333,7 @@ export default function Finance() {
         </div>
       </section>
 
-      {/* ─────────────────────────────────────────────────────────────
-          ABOUT STRATTON FINANCE
-      ───────────────────────────────────────────────────────────── */}
+      {/* ABOUT STRATTON FINANCE */}
       <section className="py-20 bg-[#060E1C]">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -366,6 +360,9 @@ export default function Finance() {
               <h2 className="text-4xl md:text-5xl font-heading tracking-wider mb-8 text-white">
                 ABOUT STRATTON <span className="text-[#F5B942]">FINANCE</span>
               </h2>
+              <p className="text-white/70 leading-relaxed mb-6">
+                Hi, I'm <strong className="text-white">Erin Crofton</strong>, your dedicated finance consultant at Stratton Finance in Wanneroo, Perth. I take the time to understand your situation and work to deliver positive, efficient finance outcomes for my clients — with honest advice and personal service throughout. Backed by Stratton's award-winning brokerage, here's how we can help:
+              </p>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-8 h-8 rounded-full bg-[#F5B942]/15 border border-[#F5B942]/30 flex items-center justify-center shrink-0 mt-0.5">
@@ -397,9 +394,7 @@ export default function Finance() {
         </div>
       </section>
 
-      {/* ─────────────────────────────────────────────────────────────
-          AWARD-WINNING BROKER — stats + copy
-      ───────────────────────────────────────────────────────────── */}
+      {/* AWARD-WINNING BROKER */}
       <section className="py-20 border-y border-white/6 bg-[#080F1D]">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -454,9 +449,7 @@ export default function Finance() {
         </div>
       </section>
 
-      {/* ─────────────────────────────────────────────────────────────
-          HOW STRATTON FINANCE CAN HELP YOU
-      ───────────────────────────────────────────────────────────── */}
+      {/* HOW STRATTON FINANCE CAN HELP YOU */}
       <section className="py-20 bg-[#060E1C]">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="text-center mb-12">
@@ -508,13 +501,10 @@ export default function Finance() {
         </div>
       </section>
 
-      {/* ─────────────────────────────────────────────────────────────
-          LOAN CALCULATOR + ENQUIRY FORM
-      ───────────────────────────────────────────────────────────── */}
+      {/* LOAN CALCULATOR + ENQUIRY FORM */}
       <section id="enquire" className="py-20 border-t border-white/6 bg-[#080F1D]">
         <div className="container mx-auto px-6 max-w-5xl">
 
-          {/* Header */}
           <div className="text-center mb-10">
             <div className="bg-white rounded-2xl px-10 py-5 inline-block shadow-[0_8px_30px_rgba(0,0,0,0.4)] mb-8">
               <img src={STRATTON_LOGO} alt="Stratton Finance" className="h-10 w-auto object-contain" crossOrigin="anonymous" />
@@ -556,7 +546,7 @@ export default function Finance() {
           ) : (
             <div className="space-y-6">
 
-              {/* ── Step 1: Loan Type ── */}
+              {/* Step 1: Loan Type */}
               <div className="bg-white/3 border border-white/8 rounded-2xl p-6 relative overflow-hidden">
                 <div className="absolute top-0 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-[#F5B942]/30 to-transparent" />
                 <p className="text-xs font-bold text-[#F5B942]/70 uppercase tracking-widest mb-4">Step 1 — Select Loan Type</p>
@@ -584,7 +574,7 @@ export default function Finance() {
                 </div>
               </div>
 
-              {/* ── Step 2: Amount ── */}
+              {/* Step 2: Amount */}
               <div className="bg-white/3 border border-white/8 rounded-2xl p-6 relative overflow-hidden">
                 <div className="absolute top-0 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-[#F5B942]/30 to-transparent" />
                 <p className="text-xs font-bold text-[#F5B942]/70 uppercase tracking-widest mb-4">Step 2 — Loan Amount</p>
@@ -619,7 +609,7 @@ export default function Finance() {
                 </div>
               </div>
 
-              {/* ── Estimate Table ── */}
+              {/* Estimate Table */}
               {showEstimate && (
                 <div className="rounded-2xl overflow-hidden border border-[#F5B942]/25 shadow-[0_0_30px_rgba(245,185,66,0.07)]">
                   <div className="px-6 py-4 bg-[#F5B942]/8 border-b border-[#F5B942]/20 flex flex-wrap items-center justify-between gap-3">
@@ -692,7 +682,7 @@ export default function Finance() {
                 </div>
               )}
 
-              {/* ── Step 3: Your Details ── */}
+              {/* Step 3: Your Details */}
               <div className="bg-white/3 border border-white/8 rounded-2xl p-8 shadow-2xl relative overflow-hidden">
                 <div className="absolute top-0 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-[#F5B942]/40 to-transparent" />
                 <p className="text-xs font-bold text-[#F5B942]/70 uppercase tracking-widest mb-1">
@@ -776,9 +766,7 @@ export default function Finance() {
         </div>
       </section>
 
-      {/* ─────────────────────────────────────────────────────────────
-          IMPORTANT INFORMATION
-      ───────────────────────────────────────────────────────────── */}
+      {/* IMPORTANT INFORMATION */}
       <section className="py-10 border-t border-white/6 bg-[#060E1C]">
         <div className="container mx-auto px-6 max-w-7xl">
           <p className="text-xs font-semibold text-white/40 mb-3 uppercase tracking-widest">Important Information</p>
@@ -792,11 +780,7 @@ export default function Finance() {
             <span className="text-xs text-white/25 flex items-center gap-1.5"><Shield className="w-3.5 h-3.5 text-[#F5B942]/50" /> ACL 364340</span>
             <span className="text-xs text-white/25 flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[#F5B942]/50" /> FBAA Member 103514</span>
             <span className="text-xs text-white/25 flex items-center gap-1.5"><Star className="w-3.5 h-3.5 text-[#F5B942]/50" /> Best Car Loans 2021–2026 · ProductReview</span>
-            <span className="text-xs text-white/25 flex items-center gap-1.5"><Star className="w-3.5 h-3.5 text-[#F5B942]/50" /> Best Large-Size Brokerage 2023–2024 · WeMoney</span>
-          </div>
-        </div>
-      </section>
-
-    </div>
+     <span className="text-xs text-white/25 flex items-center gap-1.5"><Star className="w-3.5 h-3.5 text-[#F5B942]/50" /> Best Large-Size Brokerage 2023–2024 · WeMoney</span>
+    </section>
+</div>
   );
-}
